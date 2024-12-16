@@ -9,7 +9,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": ["tiktok", "downloader", "nodejs"],
-  "author": "Your Name",
+  "author": "AiraaCheisyaa",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
@@ -21,7 +21,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.0.20"
   },
   "devDependencies": {
-    "nodemon": "^2.7.0"
+  "nodemon": "^2.0.22"
   }
 }
 
