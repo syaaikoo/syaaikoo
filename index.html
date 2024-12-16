@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikDown - Download Video TikTok Tanpa Watermark</title>
+    
+    <!-- CSS Libraries -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ... (CSS yang sudah ada tetap sama) ... */
+
+        /* Tambahkan style untuk loading spinner */
+        .spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: var(--highlight-light);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .dark-mode .spinner {
+            border-left-color: var(--highlight-dark);
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Style untuk pesan error */
+        .error-message {
+            color: #ff4757;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Style untuk tombol download */
+        .download-link {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--highlight-light);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode .download-link {
+            background-color: var(--highlight-dark);
+        }
+
+        .download-link:hover {
+            background-color: var(--accent-light);
+        }
+
+        .dark-mode .download-link:hover {
+            background-color: var(--accent-dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- ... (Header dan bagian lain tetap sama) ... -->
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Download Video TikTok Tanpa Watermark</h1>
+            <p class="hero-subtitle">Cepat, Mudah, dan Gratis!</p>
+            <div class="download-form">
+                <div class="input-group">
+                    <input type="text" id="tiktok-url" class="input-field" placeholder="Tempel tautan video TikTok di sini...">
+                    <button id="download-btn" class="download-btn">
+                        <i class='bx bx-download'></i>
+                        Download
+                    </button>
+                </div>
+                <div class="spinner"></div>
+                <p class="error-message"></p>
+                <a href="#" class="download-link" download>Download Video</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... (Bagian lain tetap sama) ... -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+        // ... (Script yang sudah ada tetap sama) ...
+
+        // Form Validation dan Download Logic
+        const downloadForm = document.querySelector('.download-form');
+        const input = downloadForm.querySelector('#tiktok-url');
+        const downloadBtn = downloadForm.querySelector('#download-btn');
+        const spinner = downloadForm.querySelector('.spinner');
+        const errorMessage = downloadForm.querySelector('.error-message');
+        const downloadLink = downloadForm.querySelector('.download-link');
+
+        downloadBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            if (!input.value) {
+                showError('Harap masukkan tautan video TikTok');
+                return;
+            }
+
+            try {
+                spinner.style.display = 'block';
+                downloadBtn.disabled = true;
+                errorMessage.style.display = 'none';
+                downloadLink.style.display = 'none';
+
+                const response = await fetch('http://localhost:3000/api/download', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ url: input.value }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Gagal mengunduh video');
+                }
+
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                downloadLink.href = url;
+                downloadLink.style.display = 'inline-block';
+                showError('Video berhasil diunduh! Klik link di bawah untuk menyimpan.', false);
+            } catch (error) {
+                showError('Terjadi kesalahan saat mengunduh video. Silakan coba lagi.');
+            } finally {
+                spinner.style.display = 'none';
+                downloadBtn.disabled = false;
+            }
+        });
+
+        function showError(message, isError = true) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            errorMessage.style.color = isError ? '#ff4757' : '#4cd137';
+        }
+    </script>
+</body>
+</html>
+
