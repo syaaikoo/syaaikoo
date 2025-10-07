@@ -10,10 +10,9 @@
 
 ### Current activities 
 - 👨‍💻 I am Not a Programmer
-- 🌱 I am currently learning JavaScript
-- 🎯 Play mobile legends With Me? ID 1521723641
-- 📧 My Business Email GxyennDEV@gmail.com
-- 💰 Donate For Me [Saweria](https://saweria.co/Gxyenn) 
+- 🌱 I am currently learning Python
+- 🎯 Play mobile legends With Me? ID 792189301
+- 📧 My Business Email chansassya@gmail.com
 
 
 ### Connect with me ☎️
