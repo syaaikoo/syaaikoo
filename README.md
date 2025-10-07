@@ -1,10 +1,5 @@
 <div align="center">
-<a href="https://www.youtube.com/@GxyenDEV">
-    <img
-        src="https://readme-typing-svg.herokuapp.com?font=ShadowsIntoLightsize=50&duration=5500&color=f70787&background=FF673200&center=true&vCenter=true&lines=Hello,+I+am+Gxyenn;Welcome+to+my+GitHub+😊"
-            alt="Typing SVG"
-        />
-    </a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=F748C5&width=435&lines=Haii+akuu+Airaa+Cheisyaa;Salam+kenall+yaa!!;Selengkapnya+ada+dibawa+ini" alt="Typing SVG" /></a>
 </p>
 </div>
 
