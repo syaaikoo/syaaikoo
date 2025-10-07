@@ -23,7 +23,7 @@
 <p align="center"><img src="https://count.getloli.com/get/@syaaikoo-github-readme?theme=rule34" /></p>  
 
 <p align="center">  
-  <a href="https://wa.me/6283877636168?text=mau_apa?"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />  
+  <a href="https://wa.me/6281553362795?text=aii kak airaaa, aku dapet nomormu dari profil github ehehehe"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />  
   <a href="https://instagram.com/syaaikoo"><img src="https://img.shields.io/badge/Instagram-syaaikoo-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /><br>  
 </p>  
 
