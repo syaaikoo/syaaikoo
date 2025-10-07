@@ -1,6 +1,6 @@
 <div align="center">  
   <a href="https://instagram.com/syaaikoo">  
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=4000&pause=1000&color=CB9DF0&center=true&vCenter=true&multiline=true&width=500&height=80&lines=Haiii%2C+aku+Airaa+Cheisyaa+%F0%9F%92%96;Salam+kenal+yaa!!+%F0%9F%98%8A;Selengkapnya+ada+dibawah+ini+%E2%9C%A8" alt="Typing SVG" />  
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=4000&pause=1000&color=CB9DF0&center=true&vCenter=true&multiline=true&width=500&height=80&lines=Haiii%2C+aku+Airaa+Cheisyaa+%F0%9F%92%96;Salam+kenal+yaa!!+%F0%9F%98%8A" alt="Typing SVG" />  
   </a>  
   <br><br>  
   <p><img src="https://media.tenor.com/2roX3uxz_68AAAAM/anime-happy.gif" width="250"/>
