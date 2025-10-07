@@ -55,7 +55,7 @@
 
 <p align="center">  
   <a href="https://github.com/syaaikoo/Marine969">  
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=syaaikoo&repo=Marine969&theme=tokyonight&hide_border=true">  
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=syaaikoo&repo=termux-starter&theme=tokyonight&hide_border=true">  
   </a>  
 </p>  
 
